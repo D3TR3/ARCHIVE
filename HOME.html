@@ -1,11 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<script>
+var video = document.getElementById("myVideo");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
 <head>
 	<meta charset="UTF-8">
 	<title>HOME</title>
 	<link href="style.css" rel="stylesheet">
 </head>
 <body>
+	<video autoplay muted loop id="myVideo">
+		<source src="bground.mp4" type="video/mp4">
+	  </video>
 	<div class="box-area">
 		<header>
 			<div class="wrapper">
@@ -15,10 +34,12 @@
 				<nav>
 				<b><a href="HOME.html">HOME</a> <a href="DOWNLOADS.html">DOWNLOADS</a> <a href="CONTACT.html">CONTACT</b></a>
 				</nav>
+				
 			</header>
 			</div>
 		<div class="banner-area">
 			<h2>Detre's File Archive</h2>
+				<h3>AN ARCHIVE FOR EVERYONE</h3>
 			</div>
 			</div>
 		</div>
